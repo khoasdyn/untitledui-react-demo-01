@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+import { ArrowLeft } from "@untitledui/icons";
+import { useNavigate } from "react-router";
+import { Button } from "@/components/base/buttons/button";
 
 // Line icons - clean, minimal outlines
 import {
@@ -105,18 +107,17 @@ const styles = [
 ];
 
 export const IconsDemo = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="min-h-dvh bg-primary">
             {/* Header with navigation back to home */}
             <header className="sticky top-0 z-10 border-b border-secondary bg-primary/80 backdrop-blur-sm">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
                     <h1 className="text-xl font-semibold text-primary">Untitled UI Icons PRO Demo</h1>
-                    <Link
-                        to="/"
-                        className="rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-700"
-                    >
-                        ← Back to Home
-                    </Link>
+                    <Button onClick={() => navigate("/")} color="secondary" size="md" iconLeading={ArrowLeft}>
+                        Back to Home
+                    </Button>
                 </div>
             </header>
 

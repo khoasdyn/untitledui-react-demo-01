@@ -21,7 +21,7 @@ export function NotFound() {
                         <Button color="secondary" size="xl" iconLeading={ArrowLeft} onClick={() => router(-1)}>
                             Go back
                         </Button>
-                        <Button size="xl" onClick={() => router(-1)}>
+                        <Button size="xl" onClick={() => router("/")}>
                             Take me home
                         </Button>
                     </div>
