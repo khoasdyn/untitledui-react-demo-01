@@ -11,6 +11,7 @@
     "dependencies": {
         "@tailwindcss/typography": "^0.5.19",
         "@tailwindcss/vite": "^4.1.18",
+        "@untitledui-pro/icons": "^0.0.2",
         "@untitledui/file-icons": "^0.0.8",
         "@untitledui/icons": "^0.0.19",
         "input-otp": "^1.4.2",

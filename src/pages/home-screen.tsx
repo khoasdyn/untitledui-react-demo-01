@@ -1,4 +1,5 @@
-import { BookOpen01, Check, Copy01, Cube01, HelpCircle } from "@untitledui/icons";
+import { BookOpen01, Check, Copy01, Cube01, HelpCircle, Star01 } from "@untitledui/icons";
+import { Link } from "react-router";
 import { Button } from "@/components/base/buttons/button";
 import { ButtonUtility } from "@/components/base/buttons/button-utility";
 import { UntitledLogoMinimal } from "@/components/foundations/logo/untitledui-logo-minimal";
@@ -70,6 +71,16 @@ export const HomeScreen = () => {
                         Help
                     </Button>
                 </div>
+
+                {/* Navigation to Icons Demo page */}
+                <Link
+                    to="/icons-demo"
+                    className="mt-8 flex items-center gap-2 rounded-xl border border-secondary bg-secondary px-6 py-4 transition-colors hover:bg-tertiary"
+                >
+                    <Star01 className="size-5 text-brand-600" />
+                    <span className="font-medium text-primary">View PRO Icons Demo</span>
+                    <span className="ml-2 text-sm text-tertiary">→</span>
+                </Link>
             </div>
 
             {/* Demo: Pricing Section Component */}
