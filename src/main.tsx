@@ -10,7 +10,7 @@ import "@/styles/globals.css";
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <ThemeProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/untitledui-react-demo-01/">
                 <RouteProvider>
                     <Routes>
                         <Route path="/" element={<HomeScreen />} />
